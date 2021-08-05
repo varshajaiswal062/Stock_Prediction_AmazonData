@@ -1,10 +1,30 @@
 <h1 align="center"> News Article Dataset</h1>
 
-## Problem statement:
+## Introduction:-
+The News Article dataset has 2015 to 2021 news data with two column dates and headlines.It contains data for different company basically the headlines of the news
+In this data we are going to perform sentiment analysis and get the result that whether the stock price will increase or decrease by just headlines of the news. 
 
-**<font size="4.5"> Given data of News Title and Headline along with some other features, predict the sentiment of News Title and Headline. </font>**
+## Text preprocessing for sentiment analysis:
 
-<font size="4"><span style="color:Black;font-family: Arial"> Sentiment Analysis or Opinion Mining is a way of finding out the polarity or strength of the opinion (positive or negative) that is expressed in written text, in the case of this project – stock news articles. According to the principle of document level sentiment analysis, each individual document is tagged with its respective polarity. This is generally done by finding polarities of each individual words/phrases and sentences and combining them to predict the polarity of whole document. </span></font>**
+To perform sentiment analysis on news headlines, the data must be prepped in advance. The data is loaded and viewed, then, we prepped the data, by converting everything into desired datatypes say dates into date format from string. After this step, we got our dates and respective news headlines as a table. Then Punctuations are removed.
+Then contractions were handled, contractions such as i’ll ,i’d etcetera were converted to proper english words i will, i would. 
+After this, the text is converted into lower case, so it will be easy for us to proceed further.Then stopwords were removed. Then Lemmatization and Stemming has been performed on the data. Lemmatization removes the grammar tense and transforms each word into its original form. Another way of converting words to its original form is called stemming. While stemming takes the linguistic root of a word, lemmatization is taking a word into its original lemma.
+Atlast, the data was tokenized, then a word cloud was made, to display the words with high frequency. 
+Summarizing text preprocessing:
+Imported , viewed the data.
+Converting everything to desired datatypes.
+Removal of punctuations.
+Contractions were handled.
+Lowercase conversion.
+Stopwords removal.
+Lemmatization and stemming.
+Tokenization.
+Wordcloud
+
+## Sentiment Analysis:-
+Sentiment Analysis or Opinion Mining is a way of finding out the polarity or strength of the opinion (positive or negative) that is expressed in written text, in the case of this project – stock news articles. According to the principle of document level sentiment analysis, each individual document is tagged with its respective polarity. This is generally done by finding the polarities of each individual word/phrase and sentences and combining them to predict the polarity of the whole document. 
+
+
 
 ### Modelling
 
